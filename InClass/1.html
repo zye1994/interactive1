@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <title>
+    <!-- add your title here -->
+  </title>
+  <style>
+
+    /* start your style code here (if allowed) */
+
+    .box {
+    	width: 200px;
+    	/* height: 200px; */
+    	padding: 30px;
+    	margin: 20px;
+    	border: 3px solid #000;
+    	background-color: #ccc;
+
+    }
+
+    .placement{
+    	height: 200px;
+    	position:  relative;
+    	top: 50px;
+    	left: 200px;
+    	z-index: 100px;
+
+    }
+
+    .absolute {
+    	height: 100px;
+    	background-color: red;
+    	position: absolute;
+    	top: 20px;
+    	right: 0px;
+    	margin-right: 0;
+    }  
+
+    .fix {
+    	height: 50px;
+    	background-color: blue;
+    	position: fixed;
+    	top:0;
+    	left: 200px;
+    	margin: 0;
+
+    }
+
+    .centered {
+    	background-color:orange;
+    	margin: 0 auto;
+        }
+
+    .circle{
+    	width: 200px;
+    	height: 200px;
+    	border-radius: 50%;
+    	background-color: red;
+    }
+
+    #highlight {
+    	background-color: green;
+    	border: 10px dotted red;
+    	height: 200px;
+    }
+
+    .fancy{
+    	font-style: italic;
+    	font-size: 20px;
+    	text-decoration: underline;
+    	color: orange;
+    }
+
+    /*
+    a:visited {
+		color: #000;
+    }
+	*/
+
+  </style>
+</head>
+
+<body>
+
+  <div id="special" class="circle circle">
+
+  </div>
+
+  <div class="box centered">	
+
+  </div>
+
+  <div class="box absolute">
+
+  </div>
+
+  <div class="box placement">
+  
+  </div>
+
+  <div class="box">
+  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  	quis nostrud exercitation ullamco <span class="fancy">laboris </span> nisi ut aliquip ex ea commodo
+  	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  	cillum dolore eu fugiat <a herf="http://www.cca.edu">nulla pariatur</a>. Excepteur sint occaecat cupidatat non
+  	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+  <dix class="box fix">
+
+  </dix>	
+
+</body>
+</html>
