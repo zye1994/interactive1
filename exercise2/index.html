@@ -1,0 +1,158 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+	<title>
+		Exercise 2 - Card
+	</title>
+	<style>
+
+		body {
+		  font-family: 'Noto Sans', sans-serif;
+		}
+
+		.card {
+			transition: all 0.5s ease;
+			text-align: center;
+			width: 200px;
+			height: 350px;
+			border:1px solid #EEE;
+			margin: 50px auto;
+			background-color: #320707;
+			font-size: 12px;
+			color: #CCC;
+		}
+
+		.logo {
+			padding: 30px 0 0;
+		}
+
+		.logo img {
+			vertical-align: middle;
+			width: 60px;
+			border-radius: 50%;
+			border:1px solid #EEE;
+			position: relative;
+			top:-3px;
+		}
+
+		.content {
+			height: 100%;
+			position: relative;
+		}
+
+		.name {
+			color: #EEE;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 5px 0 0;
+			line-height: 1.0em;
+		}
+
+		.contact {
+			padding: 20px 0;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+
+		.bio{
+			display: none;
+		}
+
+		@media screen and (min-width: 768px) {
+
+		 .card{
+		 	text-align: left;
+		 	width: 700px;
+		 	height: 350px;
+		 	background-color: #ff6a00;
+		 	color: #000;
+		 }
+
+		 .name{ 
+		 	color: #000;
+		 	font-size: 28px;
+		 	font-weight: 700;
+		 }
+
+		 .text {
+		 	float: left;
+		 	padding: 20px 5px;
+		 }
+
+		 .logo {
+		 	float: left;
+		 	padding: 20px;
+		 }
+		 .contact{
+		 	font-size: 28px;
+		 	padding-left: 180px;
+		 	bottom: 29px;
+		 }
+
+}
+
+		@media screen and (min-width: 1200px) {
+			.card {
+				transform: rotate(20deg);
+				background-color: #FFCD55;
+
+			}
+
+			.bio {
+				display: block;
+				float: right;
+				width: 25%;
+				font-style: italic;
+				padding: 10px;
+			}
+
+}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="card">
+		<div class="content">
+			
+			<div class="logo">
+				<img src="IMG_9297.jpg" />
+			</div>
+
+			<div class="text">
+
+				<div class="name">Young Ye</div>
+				<div class="title">Designer</div>
+
+			</div>
+
+			<div class="contact">
+				zye@cca.com<br />
+				415-781-9728<br />
+				Oakland, CA
+			</div>
+
+			<div class="bio"> 
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+			
+		</div>
+
+	</div>
+
+</body>
+</html>
