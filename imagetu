@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <title>
+    imagetu
+  </title>
+  
+  <style>
+
+   body {
+   		background-image: url('2hahaha.png');
+   		background-repeat: repeat-x;
+   		background-size: contain;
+   }
+
+   h1{font-size: 15.0em;}
+
+   .shasta{
+    background-image: url('35034888-abstract-winter-texture-of-blue-Frozen-distort-water-Stock-Photo.jpg');
+   	width: 600px;
+   	height: 300px;
+
+   	}
+
+
+   }
+
+  </style>
+</head>
+
+<body>
+
+	
+  
+<img src="35034888-abstract-winter-texture-of-blue-Frozen-distort-water-Stock-Photo.jpg" />
+
+<div class="shasta">
+	<h1> Hello</h1>
+</div>
+
+
+
+</body>
+</html>
