@@ -7,32 +7,360 @@
    Interactive Poster
   </title>
   <style>
+
   	body {
-  		background-color: #B82B2B;
+  		background: red;
   	}
 
-  	.picture {
-  		width: 900px;
-  		margin: 0 auto;
-
-  	}
 
   	.picture img {
 
-  		position: fixed;
-  		bottom: 0;
-  		height: 100%;
-      left: 370px;
-  	}
+  	position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 700px;
+    margin-left: -350px;
+
+    }
+
+     
+     .b1 {
+      position: absolute;
+      bottom: -15px;
+      height: 10%;
+      left: 100px;
+      animation: ballonup 5s 1s linear infinite; 
+      }
+
+      @keyframes ballonup{
+      0% {bottom: -10%; left: 300px;}
+      20% {bottom: 20%; left: 305px; transform: rotate(3deg);}
+      40% {bottom: 40%; left: 300px; transform: rotate(-3deg);}
+      60% {bottom: 60%; left: 305px; transform: rotate(3deg);}
+      80% {bottom: 80%; left: 300px; transform: rotate(-3deg);}
+      90% {bottom: 90% ; left: 305px;}
+      100% {bottom: 110%; left: 300px;}
+      }
 
 
-  </style>
+
+
+      .b2 {
+      position: absolute;
+      bottom: -93px;
+      height: 5%;
+      left: 260px;
+      animation: ballonup2 9s 2s linear infinite; 
+      }
+
+      @keyframes ballonup2{
+      0% {bottom: -10%; left: 260px;}
+      20% {bottom: 20%; left: 262px; transform: rotate(3deg);}
+      40% {bottom: 40%; left: 261px; transform: rotate(-3deg);}
+      60% {bottom: 60%; left: 260px; transform: rotate(3deg);}
+      80% {bottom: 80%; left: 261px; transform: rotate(-3deg);}
+      90% {bottom: 90% ; left: 263px;}
+      95% {bottom: 95% ; left: 262px;}
+      100% {bottom: 150%; left: 263px;}
+      }
+
+      .b3 img {
+      position: fixed;
+      bottom: -98px;
+      height: 30%;
+      left: 02px;
+      animation: ballonup3 5s 2s linear infinite; 
+      }
+
+      @keyframes ballonup3{
+      0% {bottom: -10%; left: -02px;}
+      20% {bottom: 20%; left: -03px; transform: rotate(3deg);}
+      40% {bottom: 40%; left: -02px; transform: rotate(-3deg);}
+      60% {bottom: 60%; left: -03px; transform: rotate(3deg);}
+      80% {bottom: 80%; left: -02px; transform: rotate(-3deg);}
+      90% {bottom: 90% ; left: -03px;}
+      100% {bottom: 110%; left: -02px;}
+      }
+
+      .b4 img {
+      position: fixed;
+      bottom: -103px;
+      height: 30%;
+      left: 63px;
+      animation: ballonup4 5s linear infinite; 
+      }
+
+      @keyframes ballonup4{
+      0% {bottom: -10%; left: 62px;}
+      20% {bottom: 20%; left: 63px; transform: rotate(3deg);}
+      40% {bottom: 40%; left: 62px; transform: rotate(-3deg);}
+      60% {bottom: 60%; left: 63px; transform: rotate(3deg);}
+      80% {bottom: 80%; left: 62px; transform: rotate(-3deg);}
+      90% {bottom: 90% ; left: 63px;}
+      100% {bottom: 110%; left: 62px;}
+      }
+
+      .b5 img {
+      position: fixed;
+      bottom: -93px;
+      height: 30%;
+      left: 324px;
+      animation: ballonup5 4.5s 0.5s linear infinite; 
+      }
+
+      @keyframes ballonup5{
+      0% {bottom: -10%; left: 324px;}
+      20% {bottom: 20%; left: 323px; transform: rotate(3deg);}
+      40% {bottom: 40%; left: 324px; transform: rotate(-3deg);}
+      60% {bottom: 60%; left: 325px; transform: rotate(3deg);}
+      80% {bottom: 80%; left: 324px; transform: rotate(-3deg);}
+      90% {bottom: 90% ; left: 325px;}
+      100% {bottom: 110%; left: 326px;}
+      }
+
+
+      .b6 img {
+      position: fixed;
+      bottom: -97px;
+      height: 30%;
+      left: 132px;
+      animation: ballonup6 7s 1.5s linear infinite; 
+      }
+
+      @keyframes ballonup6{
+      0% {bottom: -10%; left: 132px;}
+      20% {bottom: 20%; left: 133px; transform: rotate(3deg);}
+      40% {bottom: 40%; left: 132px; transform: rotate(-3deg);}
+      60% {bottom: 60%; left: 133px; transform: rotate(3deg);}
+      80% {bottom: 80%; left: 132px; transform: rotate(-3deg);}
+      90% {bottom: 90% ; left: 132px;}
+      100% {bottom: 110%; left: 133px;}
+      }
+
+      .b7 img {
+      position: fixed;
+      bottom: -153px;
+      height: 39%;
+      left: 182px;
+      animation: ballonup7 6.5s 1.2s linear infinite; 
+      }
+
+      @keyframes ballonup7{
+      0% {bottom: -10%; left: 182px;}
+      20% {bottom: 20%; left: 183px; transform: rotate(3deg);}
+      40% {bottom: 40%; left: 182px; transform: rotate(-3deg);}
+      60% {bottom: 60%; left: 183px; transform: rotate(3deg);}
+      80% {bottom: 80%; left: 182px; transform: rotate(-3deg);}
+      90% {bottom: 90% ; left: 182px;}
+      100% {bottom: 110%; left: 183px;}
+      }
+
+      .b8 img {
+      position: fixed;
+      bottom: -99px;
+      height: 32%;
+      left: -54px;
+      animation: ballonup8 6.5s 1.2s linear infinite; 
+      }
+
+      @keyframes ballonup8{
+      0% {bottom: -10%; left: -54px;}
+      20% {bottom: 20%; left: -53px; transform: rotate(3deg);}
+      40% {bottom: 40%; left: -54px; transform: rotate(-3deg);}
+      60% {bottom: 60%; left: -53px; transform: rotate(3deg);}
+      80% {bottom: 80%; left: -54px; transform: rotate(-3deg);}
+      90% {bottom: 90% ; left: -53px;}
+      100% {bottom: 110%; left: -54px;}
+      }
+
+       .b9 {
+      position: fixed;
+      bottom: -119px;
+      height: 32%;
+      left: 724px;
+      animation: ballonup9 6.5s 1.2s linear infinite; 
+      }
+
+      @keyframes ballonup9{
+      0% {bottom: -10%; left: 724px;}
+      20% {bottom: 20%; left: 723px; transform: rotate(3deg);}
+      40% {bottom: 40%; left: 724px; transform: rotate(-3deg);}
+      60% {bottom: 60%; left: 723px; transform: rotate(3deg);}
+      80% {bottom: 80%; left: 724px; transform: rotate(-3deg);}
+      90% {bottom: 90% ; left: 723px;}
+      100% {bottom: 110%; left: 724px;}
+      }
+      
+
+      .b10  {
+      position: fixed;
+      bottom: -119px;
+      height: 31%;
+      left: 754px;
+      animation: ballonup10 8s 2s linear infinite; 
+      }
+
+      @keyframes ballonup10{
+      0% {bottom: -10%; left: 754px;}
+      20% {bottom: 20%; left: 753px; transform: rotate(3deg);}
+      40% {bottom: 40%; left: 754px; transform: rotate(-3deg);}
+      60% {bottom: 60%; left: 753px; transform: rotate(3deg);}
+      80% {bottom: 80%; left: 754px; transform: rotate(-3deg);}
+      90% {bottom: 90% ; left: 753px;}
+      100% {bottom: 110%; left: 754px;}
+      }
+
+      .b11  {
+      position: fixed;
+      bottom: -133px;
+      height: 30%;
+      left: 14px;      a
+      nimation: ballonup11 6.5s 2s linear infinite; 
+      }
+
+      @keyframes ballonup11{
+      0% {bottom: -10%; left: -133px;}
+      20% {bottom: 20%; left: -134px; transform: rotate(0deg);}
+      40% {bottom: 40%; left: -135px; transform: rotate(0deg);}
+      60% {bottom: 60%; left: -134px; transform: rotate(0deg);}
+      80% {bottom: 80%; left: -133px; transform: rotate(0deg);}
+      90% {bottom: 90% ; left: -132px;}
+      95% {bottom: 95% ; left: -133px;}
+      100% {bottom: 150%; left: -132px;}
+      }
+
+      .b12 {
+      position: fixed;
+      bottom: -147px;
+      height: 73%;
+      left: 222px;
+      }
+
+      .b13  {
+      position: fixed;
+      bottom: -134px;
+      height: 45%;
+      left: 342px;
+      animation: ballonup11 7s 4s linear infinite; 
+      }
+
+      @keyframes ballonup11 {
+      0% {bottom: -10%; left: 342px;}
+      20% {bottom: 20%; left: 343px; transform: rotate(0deg);}
+      40% {bottom: 40%; left: 344px; transform: rotate(0deg);}
+      60% {bottom: 60%; left: 343px; transform: rotate(0deg);}
+      80% {bottom: 80%; left: 344px; transform: rotate(0deg);}
+      90% {bottom: 90% ; left: 343px;}
+      100% {bottom: 110%; left: 342px;}
+      }
+
+      .b14 {
+      position: fixed;
+      bottom: -108px;
+      height: 30%;
+      left: 352px;
+      }
+
+
+      .b15 {
+      position: fixed;
+      bottom: -128px;
+      height: 32%;
+      left: 1002px;
+      }
+
+      .b16 {
+      position: fixed;
+      bottom: -138px;
+      height: 32%;
+      left: 1057px;
+      }
+
+      .b17  {
+      position: fixed;
+      bottom: -138px;
+      height: 32%;
+      left: 1097px;
+      }
+</style>
+
 </head>
 
 <body>
   <div class="picture">
   	<img src="word.gif">
   </div>
+
+ <div class="b1">
+  <img src=b1.png>
+</div>
+  
+   <div class="b2">
+      <img src=b2.png>
+</div>
+  
+   <div class="b3">
+  <img src=b3.png>
+</div>
+
+ <div class="b4">
+  <img src=b4.png>
+</div>
+
+ <div class="b5">
+  <img src=b5.png>
+</div>
+
+ <div class="b6">
+  <img src=b6.png>
+</div>
+
+ <div class="b7">
+  <img src=b7.png>
+</div>
+
+ <div class="b8">
+  <img src=b8.png>
+</div>
+
+<div class="b9">
+  <img src=b9.png>
+</div>
+
+<div class="b10">
+  <img src=b5.png>
+
+<div class="b11">
+  <img src=b11.png>
+</div>
+
+<div class="b12">
+  <img src=b12.png>
+</div>
+
+<div class="b13">
+
+</div>
+
+<div class="b14">
+  <img src=b4.png>
+</div>
+
+<div class="b15">
+  <img src=b2.png>
+</div>
+
+<div class="b16">
+  <img src=b7.png>
+</div>
+
+<div class="b17">
+  <img src=b1.png>
+</div>
+
+
+
+
 
 </body>
 </html>
