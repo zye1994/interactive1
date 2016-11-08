@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <title>
+    Exercise 4
+  </title>
+  <style>
+
+  	.container {
+  		width: 300px;
+  		margin: 150px auto;
+  	}
+
+    .photo {
+    	width: 300px;
+    	cursor: pointer;
+    	position: absolute;
+    }
+
+    .m01 {
+    	transform: rotate(0deg);
+    }
+
+    .m02 {
+    	transform: rotate(5deg);
+    }
+
+    .m03 {
+    	transform: rotate(10deg);
+    }
+
+  </style>
+
+  <script>
+    $(document).ready(function() {
+
+  		$(".photo").draggable();
+
+  		$(".photo.m01").click(function(){
+
+  			$(this).animate({
+  				top: '+=300',
+				  left: '-=50'
+				},500);
+
+  		});
+
+  		$(".photo.m02").click(function(){
+
+  			$(this).animate({
+  				top: '-=50',
+				  left: '-=300'
+				},500);
+
+  		});
+
+  		$(".photo.m03").click(function(){
+
+  			$(this).animate({
+  				top: '+=50',
+				  left: '+=300'
+				},500);
+
+  		});
+
+    });
+  </script>
+</head>
+
+<body>
+  	
+  <div class="container">
+	  <img src="dog1.jpg" class="photo m01" />
+	  <img src="dog2.jpg" class="photo m02" />
+	  <img src="dog3.jpg" class="photo m03" />
+  </div>
+
+</body>
+</html>
