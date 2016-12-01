@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+  Project3
+  </title>
+  <style>
+
+      .box {
+      height: 640px;
+      color: #FFF;
+      text-align: center;
+      padding: 25px;
+      position: relative;
+    }
+
+          .box2 {
+      height: 50px;
+      color:#000000;
+      text-align: center;
+      padding: 25px;
+      position: relative;
+      font-style: italic;
+      font-size: 100px;
+    }
+
+   button {
+      padding: 5px;
+      margin: 5px;
+      font-size: 1.0em;
+      cursor: pointer;
+      background-color: red;
+    }
+
+    .nav {
+      position: fixed;
+      top:125px;
+      left:0;
+      background-color: #ffffff;
+      padding: 15px;
+    }
+
+	  body {
+	  		text-align: center;
+	  }
+
+  	
+  </style>
+
+  <script>
+
+    $(document).ready(function(){
+
+      $("#btn-s1").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".s1").offset().top
+          }, 1000);
+      });
+
+      $("#btn-s2").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".s2").offset().top
+          }, 1000);
+      });
+
+      $("#btn-s3").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".s3").offset().top
+          }, 1000);
+      });
+
+      $("#btn-s4").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".s4").offset().top
+          }, 1000);
+      });
+
+      $("#btn-s5").click(function() {
+          $('html, body').animate({
+              scrollTop: $(".s5").offset().top
+          }, 1000);
+      });
+
+      console.log( $(".s5").offset() );
+
+
+
+    
+  </script>
+</head>
+
+<body>
+
+  <div class="nav">
+    <button id="btn-s1">04:20P.M. Nov 07th</button><br />
+    <button id="btn-s2">11:00A.M. Nov 08th</button><br />
+    <button id="btn-s3">01:00P.M. Nov 09th</button><br />
+    <button id="btn-s4">11:33P.M. Nov 10th</button><br />
+    <button id="btn-s5">09:30P.M. Nov 11th</button><br />
+    <button id="btn-s6">03:50P.M. Nov 12th</button><br />
+    <button id="btn-s7">02:33A.M. Nov 13th</button><br />
+    <button id="btn-s8">07:45P.M. Nov 14th</button><br />
+  </div>
+
+  <div class="box2"> Video On Video
+  </div>
+	<video class="box s1" width="1100" height="360" controls>
+	  <source src="01.mp4" type="video/mp4"> 
+	</video>
+
+
+    <video class="box" width="1100" height="360" controls>
+    <source src="02.mp4" type="video/mp4">
+  </video>
+
+      <video class="box" width="1100" height="360" controls>
+    <source src="03.mp4" type="video/mp4">
+  </video>
+
+      <video class="box" width="1100" height="360" controls>
+    <source src="04.mp4" type="video/mp4">
+  </video>
+
+      <video class="box" width="1100" height="360" controls>
+    <source src="05.mp4" type="video/mp4">
+  </video>
+
+      <video class="box" width="1100" height="360" controls>
+    <source src="07.mp4" type="video/mp4">
+
+        <video class="box" width="1100" height="360" controls>
+    <source src="08.mp4" type="video/mp4">
+  </video>
+  
+</body>
+</html>

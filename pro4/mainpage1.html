@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+  Project3
+  </title>
+  <style>
+
+    .box {
+      height: 50%;
+      color: #FFF;
+      background-size: cover;
+      background-position: center center;
+      text-align: center;
+      padding: 25px;
+    }
+
+
+
+    .post img {
+      width: 100%;
+    }
+
+    .post video {
+      display: none;
+    }
+
+
+  	
+  </style>
+
+  <script>
+  $(document).ready(function(){
+
+      $("#imagebut1").click(function() {
+
+
+        $("#vid1").show();
+        $("#vid1")[0].play();
+        $("#imagebut1 img").hide();
+      });
+
+        $("#imagebut2").click(function() {
+        $("#vid2").show();
+        $("#vid2")[0].play();
+        $("#imagebut2 img").hide();
+      });
+
+        $("#imagebut3").click(function() {
+        $("#vid3").show();
+        $("#vid3")[0].play();
+        $("#imagebut3 img").hide();
+      });
+
+        $("#imagebut4").click(function() {
+        $("#vid4").show();
+        $("#vid4")[0].play();
+        $("#imagebut4 img").hide();
+      });
+
+        $("#imagebut5").click(function() {
+        $("#vid5").show();
+        $("#vid5")[0].play();
+        $("#imagebut5 img").hide();
+      });
+
+        $("#imagebut7").click(function() {
+        $("#vid7").show();
+        $("#vid7")[0].play();
+        $("#imagebut7 img").hide();
+      });
+
+        $("#imagebut8").click(function() {
+        $("#vid8").show();
+        $("#vid8")[0].play();
+        $("#imagebut4 img").hide();
+      });
+      });
+  
+  </script>
+
+</head>
+
+<body>
+
+<div id="imagebut1" class="post">
+  <img src="01 copy.png">
+  <video id="vid1" width="100%"  controls>
+    <source src="01.mp4" type="video/mp4"> 
+    </video>
+  </div>
+
+<div id="imagebut2" class="post">
+<img src="2 copy.png">
+<video id="vid2" width="100%"  controls>
+    <source src="02.mp4" type="video/mp4"> 
+    </video>
+</div>
+
+<div id="imagebut3" class="post">
+<img src="03 copy.png">
+<video id="vid3" width="100%"  controls>
+<source src="03.mp4" type="video/mp4"> 
+    </video>
+</div>
+
+<div id="imagebut4" class="post">
+<img src="04 copy.png">
+<video id="vid4" width="100%"  controls>
+<source src="04.mp4" type="video/mp4">
+</div>
+
+<div id="imagebut5" class="post">
+<img src="05 copy.png">
+<video id="vid5" width="100%"  controls>
+<source src="05.mp4" type="video/mp4">
+</div>
+
+<div id="imagebut7" class="post">
+<img src="07 copy.png">
+<video id="vid7" width="100%"  controls>
+<source src="07.mp4" type="video/mp4">
+</div>
+
+<div id="imagebut8" class="post">
+<img src="08 copy.png">
+<video id="vid8" width="100%"  controls>
+<source src="08.mp4" type="video/mp4">
+</div>
+
+	
+
+  
+</body>
+</html>
