@@ -1,0 +1,94 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+    Exercise 6
+  </title>
+  <style>
+
+	  img {
+  		margin: 50px;
+	  }
+
+	  #dog {
+	  	width: 400px;
+	  	height: 400px;
+	  	background-image: url('dog.jpg');
+	  	background-size: contain;
+	  	background-repeat: no-repeat;
+	  	cursor: pointer;
+	  }
+
+
+
+	  #cat {
+	  	width: 400px;
+	  	height: 400px;
+	  	background-image: url('cat.jpg');
+	  	background-size: contain;
+	  	background-repeat: no-repeat;
+	  	cursor: pointer;
+	  }
+
+	  #cat:hover {
+	  	background-image: url('cat2.jpg');
+	  }
+
+	  #dog:hover {
+	  	background-image: url('dog2.jpg');
+	  }
+
+  </style>
+
+
+  <script>
+    
+     $(document).ready(function(){
+
+    	$("#dog").hover(
+    		function(){
+		    	// hover in
+	    		$('#bark')[0].pause();
+	 				$('#bark')[0].currentTime = 0;
+		    	$('#bark')[0].play();
+    		}, 
+    		function() {
+		    	// hover out left blank
+		  	}
+    	);
+
+    	$("#cat").hover(
+    		function(){
+		    	// hover in
+	    		$('#meow')[0].pause();
+	 				$('#meow')[0].currentTime = 0;
+		    	$('#meow')[0].play();
+		  	}, 
+				function() {
+		    	// hover out left blank
+		  	}
+	  	);
+
+    });
+    
+  </script>
+</head>
+
+<body>
+	
+	<div id="dog"></div>
+	<div id="cat"></div>
+	
+  <audio id="bark">
+    <source src="bark.wav" type="audio/wav">
+	</audio>
+  
+  <audio id="meow">
+    <source src="meow.wav" type="audio/wav">
+	</audio>
+
+</body>
+</html>

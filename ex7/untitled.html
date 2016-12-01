@@ -1,0 +1,78 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <title>
+    <!-- add your title here -->
+  </title>
+  <style>
+
+
+.but {
+	position: relative;
+  		top:10px;
+  		left:0;
+  		background-color: #FFF;
+  		padding: 15px;
+}
+
+
+  </style>
+
+ <script>
+
+$(document).ready(function(){
+
+	$("#play-vid").click(function(){
+
+		$(this).hide();
+		$("#pause-vid").show();
+		$("#bart")[0].play();
+	});
+
+
+	$("#pause-vid").click(function(){
+
+		$(this).hide();
+		$("#bart")[0].pause();
+		$("#play-vid").show();
+
+	});
+
+	$("#bart").on('ended', function(){
+
+		$("#play-vid").show();
+		$("pause-vid").hide();
+
+
+	});
+
+    })
+
+
+ </script>
+</head>
+
+
+<body>
+
+<button id="play-vid" class="but">Play</button>
+<button id="pause-vid" clss="but">Pause</button>
+
+<br />
+<br />
+
+<video id="bart" width="360" height="640">
+	<source src="bart.mp4" type="video/mp4">
+</video>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q6EoRBvdVPQ?controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+
+</body>
+</html>
+
+
