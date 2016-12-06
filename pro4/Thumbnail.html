@@ -18,7 +18,7 @@
 	.container {
 		margin: 0 auto;
 		overflow: visible;
-    width: 1200px;
+    width: 1500px;
 
 	}
 
@@ -76,6 +76,7 @@
       height: 100%;
       position: absolute;
     }
+    
      .swap:hover .thumb2 {
       opacity: 0;
       cursor: pointer;
@@ -157,18 +158,22 @@
     }
 
 
-    .video-section {
-    	position: relative;
-    	width: 100%;
-    	max-height: 550px;
-    	overflow: hidden;;
-    }
-    #video-elem{
-    	width: 100%;
-    }
-    video::-webkit-media-controls {
-    	display: none; !important;
-    }
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
 
 
      </style>
@@ -181,6 +186,10 @@
     <body>
 
     <div class="container">
+
+    <video playsinline autoplay muted loop poster="01.png" id="bgvid">
+    <source src="07.mp4" type="video/mp4">
+</video>
 
      <div class="box">What's All these About?</div>
 
@@ -230,14 +239,11 @@
 
   <a href="8.html">
   <div class="box swap">
-    <div class="click">Click To Play</div>
+    <div class="click"> Click To Play </div>
     <div class="thumb8"></div>
     </a>
 
-    <div  class="video-section">
-    <video id="video-elem" preload="auto" autoplay="true" loop=l"loop" muted="muted">
-    	<source sec="01.mp4" type="video/mp4">
-    	</video>
+  
 
 
     	
