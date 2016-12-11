@@ -8,24 +8,30 @@
   </title>
   <style>
 
-      .box {
-      height: 640px;
-      color: #FFF;
-      text-align: center;
-      padding: 25px;
-      position: relative;
+  .container {
+    margin: 0 auto;
+    overflow: visible;
+      width: 1500px;
+      }
+
+    video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
     }
 
-          .box2 {
-      height: 50px;
-      color:#000000;
-      text-align: center;
-      padding: 25px;
-      position: relative;
-      font-style: italic;
-      font-size: 100px;
-    }
-  	
+    
   </style>
 
   <script>
@@ -34,9 +40,13 @@
 
 <body>
 
-  <video id="07" width=100% autoplay loop>
+      <div class="container">
+
+    <video playsinline autoplay autobuffe loop control id="bgvid">
     <source src="07.mp4" type="video/mp4">
-  </video
+    
+
+    </video>
 
 </body>
 </html>
